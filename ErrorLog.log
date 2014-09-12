@@ -1,0 +1,566 @@
+
+
+[09/11/14] [00:13:12]
+--------------------------------------------------------------------------------
+
+
+[09/11/14] [00:13:20]
+--------------------------------------------------------------------------------
+
+
+[09/11/14] [00:13:20]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 264, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 251, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 165, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (550, '\xd3\xc3\xbb\xa7\xb1\xbb\xcb\xf8\xb6\xa8')
+
+
+[09/11/14] [00:14:08]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 264, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 251, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 165, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (550, '\xd3\xc3\xbb\xa7\xb1\xbb\xcb\xf8\xb6\xa8')
+
+
+[09/11/14] [00:15:00]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 166, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (550, '\xd3\xc3\xbb\xa7\xb1\xbb\xcb\xf8\xb6\xa8')
+
+
+[09/11/14] [00:15:56]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 166, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:17:06]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 165, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:17:39]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 266, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 253, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 166, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:17:52]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 266, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 253, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 166, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:18:14]
+--------------------------------------------------------------------------------
+
+
+[09/11/14] [00:18:17]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 165, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:18:39]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 165, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:18:53]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 265, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 252, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 166, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:20:51]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 262, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 249, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 163, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:23:46]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 262, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 249, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 163, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:24:54]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 262, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 249, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 163, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'Error: authentication failed')
+
+
+[09/11/14] [00:26:09]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 262, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 249, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 163, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 141, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'authentication failed 7c086988-e8b1-4f69-be71-a31aad89d03c')
+
+
+[09/11/14] [00:29:02]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 263, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 250, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 164, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 142, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'authentication failed 11b2efc1-9a58-49a7-8152-e9d6a3a95c74')
+
+
+[09/11/14] [00:30:15]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 263, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 250, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 164, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 142, in ConnectServer
+    SMTPServer.login(username.split('@')[0],password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'authentication failed 12d69ce3-c82b-42bd-ac42-018b0d0cc664')
+
+
+[09/11/14] [00:32:16]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 263, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 250, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 164, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 147, in ConnectServer
+    SMTPServer.login(username, password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'authentication failed 20da3a02-a619-4fbb-a196-737ddc0195dc')
+
+
+[09/11/14] [00:36:25]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 262, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 249, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 163, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 146, in ConnectServer
+    SMTPServer.login(username, password)
+  File "C:\Python27\lib\smtplib.py", line 613, in login
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, 'authentication failed 4e83a9c1-e3de-451d-9d4d-cb201b42d68c')
+
+
+[09/11/14] [00:38:12]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 263, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 250, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 164, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 142, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/11/14] [00:39:24]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 168, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 145, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/11/14] [00:40:56]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 168, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 145, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/11/14] [00:42:07]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 168, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 145, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/11/14] [00:45:30]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 269, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 256, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 223, in StartToSend
+    print InitCls.transcode('\n‰∏ÄÊ¨°Âæ™ÁéØÂÆåÊàêÔºåÁ≠âÂæÖ'+self.loop_wait_minutes+'minÂêéÂèëÈÄÅ...','utf-8')
+TypeError: cannot concatenate 'str' and 'int' objects
+
+
+[09/11/14] [00:47:22]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 221, in StartToSend
+    print InitCls.transcode('\n‰∏ÄÊ¨°Âæ™ÁéØÂÆåÊàêÔºåÁ≠âÂæÖ'+self.loop_wait_minutes+'minÂêéÂèëÈÄÅ...','utf-8')
+TypeError: cannot concatenate 'str' and 'int' objects
+
+
+[09/11/14] [00:54:11]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 187, in StartToSend
+    sleep(int(self.per_email_sleep)/5)
+KeyboardInterrupt
+
+
+[09/11/14] [00:54:39]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 187, in StartToSend
+    sleep(int(self.per_email_sleep)/5)
+KeyboardInterrupt
+
+
+[09/11/14] [00:55:06]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 187, in StartToSend
+    sleep(int(self.per_email_sleep)/5)
+KeyboardInterrupt
+
+
+[09/11/14] [00:55:45]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 168, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 144, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/11/14] [00:57:24]
+--------------------------------------------------------------------------------
+
+
+[09/11/14] [01:00:46]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 267, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 254, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 168, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 144, in ConnectServer
+    SMTPServer.login(username,password)
+  File "C:\Python27\lib\smtplib.py", line 576, in login
+    raise SMTPException("SMTP AUTH extension not supported by server.")
+smtplib.SMTPException: SMTP AUTH extension not supported by server.
+
+
+[09/12/14] [11:24:38]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:28:18]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:29:32]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:31:51]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:48:40]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 266, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 251, in main
+    while true:
+NameError: global name 'true' is not defined
+
+
+[09/12/14] [11:51:05]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 268, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 251, in main
+    while true:
+NameError: global name 'true' is not defined
+
+
+[09/12/14] [11:51:22]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:53:10]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [11:54:35]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:19:32]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:20:10]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:23:06]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:23:47]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:24:13]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:26:28]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:27:11]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:27:54]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:28:14]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:28:35]
+--------------------------------------------------------------------------------
+
+
+[09/12/14] [12:32:30]
+--------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 256, in <module>
+    if __name__ == '__main__':main()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 236, in main
+    ret=send.StartToSend()
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 167, in StartToSend
+    self.RemoteServer=self.ConnectServer(self.SMTPServer,self.SMTPPort,self.FromUserInfo[0],self.FromUserInfo[1])
+  File "D:\E≈Ã\Python\2014.8.8\SendEmail.py", line 140, in ConnectServer
+    SMTPServer.connect(host=host,port=port)
+  File "C:\Python27\lib\smtplib.py", line 310, in connect
+    (code, msg) = self.getreply()
+  File "C:\Python27\lib\smtplib.py", line 361, in getreply
+    raise SMTPServerDisconnected("Connection unexpectedly closed")
+smtplib.SMTPServerDisconnected: Connection unexpectedly closed
