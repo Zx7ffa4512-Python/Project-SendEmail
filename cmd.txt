@@ -1,0 +1,83 @@
+telnet smtp.163.com 25
+
+
+helo smtp.163.com
+auth login
+eng3ZmZhNDUxMkAxNjMuY29t
+d3kyMDExMDIwMg==
+mail from:<zx7ffa4512@163.com>
+rcpt to:<xx7ffa4512@163.com>
+data
+	from:Myname<zx7ffa4512@163.com>
+	to:test<xx7ffa4512@163.com>
+	subject:CMDTest
+
+	CMDTest
+	.
+quit
+	
+	
+	
+	
+	
+	
+220 hz-b-163smtp2.163.com SMTP Server for Netease [466] a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+helo smtp.163.com
+250 hz-b-163smtp2.163.com a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+auth login
+334 VXNlcm5hbWU6 a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+eng3ZmZhNDUxMkAxNjMuY29t
+334 UGFzc3dvcmQ6 a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+d3kyMDExMDIwMg==
+235 OK, go ahead (#2.0.0) a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+mail from:<zx7ffa4512@163.com>
+250 2.0.0 OK a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+rcpt to:<xx7ffa4512@163.com>
+250 2.0.0 OK a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+data
+354 Start mail input; end with <CRLF>.<CRLF> a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+from:Myname<zx7ffa4512@163.com>
+to:test<xx7ffa4512@163.com>
+subject:CMDTest
+
+CMDTest
+.
+
+quit
+250 2.0.0 OK a54759fc-e78a-451c-9ad4-8cdca7ec6b32
+
+
+
+
+
+
+
+
+telnet smtp.mail.yahoo.com 25
+
+
+
+
+helo smtp.mail.yahoo.com					ehlo smtp.mail.yahoo.com
+STARTTLS
+AUTH LOGIN
+YmFrYWxhcnNhdHBAeWFob28uY29t
+WHp3c3E2bWdkc2E=
+mail from:<bakalarsatp@yahoo.com>
+rcpt to:<xx7ffa4512@163.com>
+data
+	from:Myname<bakalarsatp@yahoo.com>
+	to:test<xx7ffa4512@163.com>
+	subject:CMDTest
+
+	CMDTest
+	.
+quit
+
+
+
+ping smtp.yahoo.com
+
+
+
+
