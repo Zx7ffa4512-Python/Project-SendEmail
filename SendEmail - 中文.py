@@ -21,9 +21,12 @@ gMutex          =None
 gErrorLog       ="ErrorLog.log"
 #----------------------------------------------------------------------------------------------------
 
+
+
+
+
 class InitCls():
     def __init__(self):
-        system('mode con cols=120 lines=50')
         ErrorFile=open(gErrorLog,'a')
         ErrorFile.writelines("\n\n[%s] [%s]\n%s\n"%(strftime('%x'),strftime('%X'),"-"*80))
         sys.stderr   =ErrorFile
@@ -36,7 +39,7 @@ class InitCls():
 
     def ViewConfig(self, ):
         print self.transcode(open(gConfigFileStr,'r').read(),"Utf-8")
-        con=raw_input(self.transcode("[*] [%s] Configuration information as above, Whether to continue ?[Y/n]"%strftime('%X'),'utf-8'))
+        con=raw_input(self.transcode("[*] [%s] 配置信息如上,是否继续?[Y/n]"%strftime('%X'),'utf-8'))
         if con.strip().upper()=="Y":
             self.ready = True
         else:
@@ -70,8 +73,11 @@ class InitCls():
         if not exists('Receiver.txt'):open('Receiver.txt','a')
         self.__init__()
         
+        
+        
+    #sys.getfilesystemencoding()    
     @staticmethod
-    def transcode(EchoStr,charsetFrom=sys.getfilesystemencoding(),charsetTo=sys.getfilesystemencoding()):
+    def transcode(EchoStr,charsetFrom=sys.getfilesystemencoding(),charsetTo='gb2312'):
         if isinstance(EchoStr,unicode): 
             return EchoStr.encode(charsetTo)
         else:
@@ -146,22 +152,22 @@ class SendEmail():
                 #SMTPServer.send(base64.encodestring(username))
                 #SMTPServer.send(base64.encodestring(password))
                 SMTPServer.login(self.FromUserInfo[0], self.FromUserInfo[1])
-                print InitCls.transcode("[+] [%s] [%s] [Connect to the server successfully]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
+                print InitCls.transcode("[+] [%s] [%s] [连接服务器成功]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
         except Exception,e:
-            print InitCls.transcode("[-] [%s] [%s] [Connect to server failure]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
+            print InitCls.transcode("[-] [%s] [%s] [连接服务器失败]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
         return SMTPServer
 
     def SendAnEmail(self, ):
         #----------|每封信延时|----------#
         for i in range(7,self.per_email_sleep*10+7):
-            print InitCls.transcode("\r[+] [%s] [Prepare To Send%s]"%(strftime('%X'),("."*(i%6)).ljust(5)),"utf-8"),
+            print InitCls.transcode("\r[+] [%s] [准备发送中%s]"%(strftime('%X'),("."*(i%6)).ljust(5)),"utf-8"),
             sleep(0.1)
         #----------|无附件|----------#
         if self.attachment[0].lower()=='none':
             try:
                 self.msg.attach(MIMEText(self.content, _subtype=self.plainorhtml, _charset='utf-8'))
                 self.RemoteServer.sendmail(self.FromUserInfo[0],self.ToUserInfo[0],self.msg.as_string())
-                print InitCls.transcode("\r[+] [%s] [Send To] [%s] [Succeed!]"%(strftime('%X'),self.ToUserInfo[0].replace('\n','')),"utf-8"),
+                print InitCls.transcode("\r[+] [%s] [发送到] [%s] [成功!]"%(strftime('%X'),self.ToUserInfo[0].replace('\n','')),"utf-8"),
                 self.Succed.put(self.ToUserInfo[0].replace('\n',''))
                 return 0
             except Exception,e:
@@ -170,7 +176,7 @@ class SendEmail():
                     self.ReceiverQueue.put(self.ToUserInfo)
                 else:
                     self.Fail.put(self.ToUserInfo[0].replace('\n',''))
-                print InitCls.transcode("\r[-] [%s] [Send To] [%s] [Failed!] [%20s]"%(strftime('%X'),self.ToUserInfo[0].replace('\n',''),re.search(r'\(.+?\)',str(e)).group()),"utf-8"),
+                print InitCls.transcode("\r[-] [%s] [发送到] [%s] [失败!] [%20s]"%(strftime('%X'),self.ToUserInfo[0].replace('\n',''),re.search(r'\(.+?\)',str(e)).group()),"utf-8"),
                 return 1
         #----------|有附件|----------#
         else:                           
@@ -182,7 +188,7 @@ class SendEmail():
                     self.msg.attach(a)
                 self.msg.attach(MIMEText(self.content, _subtype=self.plainorhtml, _charset='utf-8'))
                 self.RemoteServer.sendmail(self.FromUserInfo[0],self.ToUserInfo[0],self.msg.as_string())
-                print InitCls.transcode("\r[+] [%s] [Send To] [%s] [Succeed!]"%(strftime('%X'),self.ToUserInfo[0].replace('\n','')),"utf-8"), 
+                print InitCls.transcode("\r[+] [%s] [发送到] [%s] [成功!]"%(strftime('%X'),self.ToUserInfo[0].replace('\n','')),"utf-8"), 
                 self.Succed.put(self.ToUserInfo[0].replace('\n',''))
                 return 0
             except Exception,e:
@@ -190,7 +196,7 @@ class SendEmail():
                     self.ReceiverQueue.put(self.ToUserInfo)
                 else:
                     self.Fail.put(self.ToUserInfo[0].replace('\n',''))
-                print InitCls.transcode("\r[-] [%s] [Send To] [%s] [Failed!] [%20s]"%(strftime('%X'),self.ToUserInfo[0].replace('\n',''),re.search(r'\(.+?\)',str(e)).group()),"utf-8"),
+                print InitCls.transcode("\r[-] [%s] [发送到] [%s] [失败!] [%20s]"%(strftime('%X'),self.ToUserInfo[0].replace('\n',''),re.search(r'\(.+?\)',str(e)).group()),"utf-8"),
                 return 1
             
     def StartToSend(self,):
@@ -204,14 +210,14 @@ class SendEmail():
             while not self.SenderQueue.empty():
                 #----------|获取一个用户密码，连接服务器|----------#
                 self.FromUserInfo=str(self.SenderQueue.get(timeout=5)).split(";") #0是帐号，1是密码，2是登录失败次数
-                self.RemoteServer=self.ConnectServer();print '-'*53
+                self.RemoteServer=self.ConnectServer();print '-'*79
                 if self.RemoteServer == None:
                     #----------|登录失败,失败次数小于3就添加|----------#
-                    print InitCls.transcode("[-] [%s] [%s] [Login Failed]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
+                    print InitCls.transcode("[-] [%s] [%s] [登录失败]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")
                     if int(self.FromUserInfo[2])<=3:self.SenderQueue.put(str(self.FromUserInfo[0]+';'+self.FromUserInfo[1]+';'+str(int(self.FromUserInfo[2])+1)))
                 else:
                     #----------|登录成功，开始发送邮件|----------#
-                    print InitCls.transcode("[+] [%s] [%s] [Login Succeeded]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")                    
+                    print InitCls.transcode("[+] [%s] [%s] [登录成功]"%(strftime('%X'),self.FromUserInfo[0]),"utf-8")                    
                     for per in range(0,int(self.per_sender)):
                         #----------|初始化配置|----------#
                         if self.ReceiverQueue.empty():return 0
@@ -227,13 +233,17 @@ class SendEmail():
                     self.RemoteServer.close();print '\n'
             else:
                 #----------|发件人循环一次结束，发件箱都禁用了|----------#
-                print InitCls.transcode("\n[-] [%s] [Run Out Of Outbox] [Please Add Some Outbox In The] [%s] [File.\nThen Press [Enter] To Continue,Enter [exit] Means Stop:]"%(strftime('%X'),self.sender),"utf-8")
+                print InitCls.transcode("\n[-] [%s] [发件箱已用尽。] [在] [%s] [文件中填写新的发件箱。\n按[Enter]继续,输入exit停止发送:]"%(strftime('%X'),self.sender),"utf-8")
                 tmp=raw_input()
                 if tmp=='exit':return 1
                 for line in open(self.sender):
                     self.SenderQueue.put(line + ";0")
         return 0
 
+
+
+
+        
 
 def main():
     start   =InitCls()
@@ -244,8 +254,8 @@ def main():
             send=SendEmail(Sender=Queue(),Receiver=Queue())
             ret=send.StartToSend()
     finally:
-            print InitCls.transcode("\n[+] [%s] [Result Report:]"%(strftime('%X')),"utf-8") 
-            print InitCls.transcode("|Succeed|"+"-"*32+"|Failed|"+"-"*33,'utf8')
+            print InitCls.transcode("\n[+] [%s] [发送结果汇报:]"%(strftime('%X')),"utf-8") 
+            print InitCls.transcode("|发送成功|"+"-"*31+"|未发送成功|"+"-"*29,'utf8')
             while True:
                 temp=''
                 if not send.Succed.empty():
